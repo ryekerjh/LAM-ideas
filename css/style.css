@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald:400,700|Lato:400,700');
+
+/*GLOBAL*/
+html, body {
+    overflow-x: hidden;
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+h2, h3, h4, h5, h6 {
+    font-family: 'Lato', sans-serif;
+}
+
+.base-bkgd {
+    background-color: #4F8062;
+}
+
+.base-color {
+    color: #4F8062;
+}
+
+.base-color:hover {
+    color: #35553C;
+}
+
+.accent-bkgd {
+    background-color: #6FBA9D;
+}
+
+.accent-color {
+    color: #6FBA9D;
+}
+
+.accent-color:hover {
+    color: #4A7C69;
+}
+
+.purple {
+    color: #7C506D;
+}
+
+a:focus, a:hover {
+    text-decoration: none;
+}
+
+button.btn-base {
+    background-color: #4F8062;
+    color: #fff;
+}
+
+button.btn-base:hover {
+    background-color: #6FBA9D;
+    color: #fff;
+}
+
+ul {
+    list-style-type: none;
+}
+/*HEADER*/
+
+.navbar-default {
+    background-color: transparent;
+    border: none;
+}
+
+nav .fa {
+    font-size: 18px;
+}
+/*HERO*/
+.jumbotron {
+    background-image: url('../img/lam-hero.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 375px;
+    margin-bottom: 0px;
+}
+
+.jumbotron::after {
+    top: 500px;
+    left: 25%;
+    content: '';
+    width: 50%;
+    position: absolute;
+    border-bottom: 101px solid #fff;
+    border-left: 104px solid transparent;
+    border-right: 104px solid transparent;
+}
+
+.call-to-action {
+    width: 40%;
+}
+
+.call-to-action p {
+    line-height: 2em;
+}
+
+/*FEATURES*/
+.item {
+    height: 325px;
+    border-width: 1px .5px 1px 0px;
+    border-style: solid;
+    border-color: #333;
+}
+
+.products-title {
+    position: absolute;
+    left: 45%;
+    top: 78%;
+}
+
+.products span {
+    position: relative;
+    display: inline-block;
+    border-radius: 50%;
+}
+
+.product, .modal-product>img {
+    height: 200px;
+    width: 200px;
+    margin-top: 16px;
+}
+
+.modal-product:hover {
+    z-index: -2;
+}
+
+.modal-product:hover .overlay {
+    z-index: 10;
+}
+
+.bottom-space {
+    margin-bottom: 80px;
+}
+
+.flex {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 8px;
+    position: relative;
+    bottom: -10px;
+}
+
+.flex h4 {
+    margin: 0;
+}
+
+/*MODAL STYLES*/
+.modal-content {
+    padding: 42px 8px;
+}
+
+.modal-product-img {
+    height: 200px;
+    width:200px;
+    margin: 0 auto;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+#modal-product-1 {
+    background-image: url('../img/sling.jpg');
+}
+
+#modal-product-2 {
+    background-image: url('../img/slingandbottle.jpg')
+}
+
+#modal-product-3 {
+    background-image: url('../img/soaps.jpg')
+}
+
+#modal-product-4 {
+    background-image: url('../img/custom-large-blanket.jpg')
+}
+
+#modal-product-5 {
+    background-image: url('../img/custom-small-blanket.jpg')
+}
+
+#modal-product-6 {
+    background-image: url('../img/fleece.jpg');
+}
+
+.overlay {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: rgba(111, 186, 157, .65);
+    z-index: -2;
+}
+
+.overlay>h5 {
+    color: #000;
+    margin-top: 48%;
+    font-weight: 700;
+}
+
+
+/*FOOTER*/
+
+footer {
+    height: 83px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(111, 186, 157);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid #4F8062;
+    margin-top: 80px;
+}
+
+.footer-link {
+    display: inline-block;
+    height: 55px;
+    width: 55px;
+    margin: 0 16px;
+    border-radius: 50%;
+    background-color: #000;
+}
+
+.footer-link .fa {
+    color: #fff;
+    font-size: 32px;
+    position: relative;
+}
+
+.footer-link[title]:hover:after {
+  content: attr(title);
+  padding: 4px 8px;
+  color: #fff;
+  position: absolute;
+  top: -20%;
+  z-index: 20;
+  background-color: #4F8062;
+  white-space: nowrap;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  -moz-box-shadow: 0px 0px 4px #222;
+  -webkit-box-shadow: 0px 0px 4px #222;
+  box-shadow: 0px 0px 4px #222;
+}
+
+.fa-info {
+    top: 25%;
+    left: 40%;
+}
+.fa-tint {
+    left: 35%;
+    top: 20%;
+}
+
+.fa-users {
+    left: 18.5%;
+    top: 22%;
+}
+
+.fa-gift {
+    left: 25.55%;
+    top: 19%;
+}
+/*ANIMATIONS*/
+@keyframes enlarge {
+    0% {
+        height: 0px;
+    }
+    20% {
+        height: 50px;
+    }
+    45% {
+        height: 100px;
+    }
+    65% {
+        height: 140px;
+    }
+    80% {
+        height: 175px;
+    }
+    100% {
+        height: 200px;
+    }
+}
